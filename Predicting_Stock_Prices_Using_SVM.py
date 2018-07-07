@@ -30,7 +30,7 @@ def predict_prices(dates,prices,x):
     plt.plot(dates,svr_len.predict(dates),color='green',label='linear model')
     plt.plot(dates,svr_poly.predict(dates),color='blue',label='poly model')
     plt.plot(dates,svr_rbf.predict(dates),color='red',label='rbf model')
-    plt.xlabel('Data')
+    plt.xlabel('Dates')
     plt.ylabel('Prices')
     plt.title('Support Vector Machine')
     plt.legend()
