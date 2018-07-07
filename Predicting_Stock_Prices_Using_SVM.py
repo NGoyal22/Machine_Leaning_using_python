@@ -37,5 +37,5 @@ def predict_prices(dates,prices,x):
     plt.show()
     
     return svr_rbf.predict(x)[0],svr_poly.predict(x)[0],svr_len.predict(x)[0]
-predict_price = predict_prices(dates,prices,8)
+predict_price = predict_prices(dates,prices,x)
 print(predict_price)
