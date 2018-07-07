@@ -10,7 +10,7 @@ auth = tweepy.OAuthHandler(Consumer_Key,Consumer_Secret)
 auth.set_access_token(Access_Token,Access_Token_Secret)
 
 api=tweepy.API(auth)
-tweets=str(input("Enter string whose you want tweets"+"\n"))
+tweets=str(input("Enter any tweet "+"\n"))
 print("You Entered String is :"+ tweets+"\n")
 public_tweets=api.search(tweets)
 
