@@ -13,7 +13,7 @@ def get_data(filename):
           dates.append(int(row[0].split('/')[1]))
           prices.append(float(row[1]))
     return
-get_data('HistoricalQuotes.csv')
+get_data(filename)
 
 def predict_prices(dates,prices,x):
     dates = np.reshape(dates,(len(dates),1))
