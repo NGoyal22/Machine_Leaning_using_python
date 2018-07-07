@@ -10,7 +10,7 @@ def get_data(filename):
       csvfr=csv.reader(csvfile)
       next(csvfr)
       for row in csvfr:
-          dates.append(int(row[0].split('/')[1]))
+          dates.append(int(row[0].split('-')[0]))
           prices.append(float(row[1]))
     return
 get_data(filename)
